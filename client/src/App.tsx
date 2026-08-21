@@ -23,7 +23,7 @@ export default function App() {
       <ThemeProvider defaultTheme="light">
         <TooltipProvider>
           <Toaster />
-          <WouterRouter base={import.meta.env.BASE_URL}>
+          <WouterRouter base={import.meta.env.BASE_URL.replace(/\/$/, "")}>
             <Routes />
           </WouterRouter>
         </TooltipProvider>
