@@ -13,7 +13,7 @@ import {
   Landmark, Layers3, MousePointer2, ShieldCheck, TrendingDown, TrendingUp,
 } from "lucide-react";
 
-const heroImage = "/manus-storage/equity-insight-hero_91085892.jpg";
+const heroImage = `${import.meta.env.BASE_URL}equity-insight-hero_91085892.jpg`;
 
 type Sector = { symbol: string; label: string; oneDay: number; fiveDay: number; twentyDay: number };
 
