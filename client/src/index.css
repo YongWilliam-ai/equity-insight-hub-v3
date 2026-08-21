@@ -1,13 +1,17 @@
-/* BIT V3 — official-guide alignment: #0040FF / #0A0D14 / #FFFFFF lead; Readex Pro is the documented restricted-environment fallback. */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&display=swap');
+/* BIT V3 — official UED alignment. Tokens and local fonts are copied from the user-provided Design System bundle. */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;600;700&display=swap');
+@font-face { font-family: "Matrixport Pro"; src: url("/equity-insight-hub-v3/brand/fonts/MatrixportPro-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Matrixport Pro"; src: url("/equity-insight-hub-v3/brand/fonts/MatrixportPro-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "Matrixport Pro"; src: url("/equity-insight-hub-v3/brand/fonts/MatrixportPro-SemiBold.ttf") format("truetype"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Matrixport Pro"; src: url("/equity-insight-hub-v3/brand/fonts/MatrixportPro-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-display: "Readex Pro", "Noto Sans TC", sans-serif;
-  --font-sans: "Readex Pro", "Noto Sans TC", sans-serif;
+  --font-display: "Matrixport Pro", system-ui, sans-serif;
+  --font-sans: "Matrixport Pro", system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", "Noto Sans TC", monospace;
   --color-background: #FFFFFF;
   --color-foreground: #0A0D14;
@@ -30,11 +34,11 @@
 
 * { border-color: #E0D5C3; }
 html { scroll-behavior: smooth; }
-body { margin: 0; min-width: 320px; background: #FFFFFF; color: #0A0D14; font-family: "Readex Pro", "Noto Sans TC", sans-serif; }
+body { margin: 0; min-width: 320px; background: #FFFFFF; color: #0A0D14; font-family: "Matrixport Pro", system-ui, sans-serif; }
 button, input { font: inherit; }
 button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid #0040FF; outline-offset: 3px; }
 
-.font-display { font-family: "Readex Pro", "Noto Sans TC", sans-serif; }
+.font-display { font-family: "Matrixport Pro", system-ui, sans-serif; }
 .font-mono { font-family: "IBM Plex Mono", "Noto Sans TC", monospace; }
 .ledger-spine { box-shadow: 12px 0 28px rgba(27, 48, 41, 0.08); }
 .ledger-spine::after { content: ""; position: absolute; right: 14px; top: 0; bottom: 0; width: 1px; background: rgba(201, 154, 72, 0.24); }
@@ -104,3 +108,20 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid 
 .bit-v3 .bit-brand-label { font-family: "Readex Pro", "Noto Sans TC", sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
 .bit-v3 .bit-brand-label strong { color: #FFFFFF; font-size: 16px; letter-spacing: -.025em; }
 .bit-v3 .bit-brand-label span { color: #478DFF; }
+.bit-v3, .bit-v3 * { font-family: "Matrixport Pro", system-ui, sans-serif; }
+.bit-v3 .font-mono, .bit-v3 .font-mono * { font-family: "SF Mono", "Consolas", "Liberation Mono", monospace; }
+.bit-v3 .bit-page { background: var(--bg-background) !important; }
+.bit-v3 .bit-blue-rule { background: var(--brand); }
+.bit-v3 .bit-brand-logo { display: block; height: auto; max-width: 128px; }
+.bit-v3 .bit-brand-logo--slogan { max-width: 156px; }
+.bit-v3 .bit-action { min-height: 32px; border-radius: var(--radius-8); transition: transform var(--duration-fast) var(--ease-out-quart), background-color var(--duration-fast) var(--ease-out-quart), border-color var(--duration-fast) var(--ease-out-quart); }
+@media (prefers-reduced-motion: no-preference) { .bit-v3 .bit-action:hover { transform: translateY(-1px); } .bit-v3 .bit-action:active { transform: translateY(0); } }
+/* Legacy Market Ledger colour utilities are remapped only inside the independent BIT V3 scope. */
+.bit-v3 [class*="bg-[#F3EFE6]"], .bit-v3 [class*="bg-[#f3efe6]"], .bit-v3 [class*="bg-[#FAF7F0]"], .bit-v3 [class*="bg-[#faf7f0]"], .bit-v3 [class*="bg-[#F9F5EB]"], .bit-v3 [class*="bg-[#f9f5eb]"], .bit-v3 [class*="bg-[#F9F4EA]"], .bit-v3 [class*="bg-[#f9f4ea]"], .bit-v3 [class*="bg-[#F7F1E6]"], .bit-v3 [class*="bg-[#f7f1e6]"], .bit-v3 [class*="bg-[#EAE4D8]"] { background-color: #FFFFFF !important; }
+.bit-v3 [class*="bg-[#EDF1F7]"] { background-color: #F5F7FA !important; }
+.bit-v3 [class*="bg-[#102D28]"], .bit-v3 [class*="bg-[#10332D]"], .bit-v3 [class*="bg-[#153A32]"], .bit-v3 [class*="bg-[#16382F]"], .bit-v3 [class*="bg-[#16382f]"] { background-color: #0A0D14 !important; }
+.bit-v3 [class*="border-[#E4DBC9]"], .bit-v3 [class*="border-[#DED4C2]"], .bit-v3 [class*="border-[#DCD1BE]"], .bit-v3 [class*="border-[#D7C6A7]"], .bit-v3 [class*="border-[#E2D8C6]"], .bit-v3 [class*="border-[#D8CCB7]"], .bit-v3 [class*="border-[#D7C6A7]"], .bit-v3 [class*="border-[#E1D7C5]"], .bit-v3 [class*="border-[#DED3C2]"] { border-color: #E4E6EA !important; }
+.bit-v3 [class*="border-[#C99A48]"], .bit-v3 [class*="border-[#c99a48]"] { border-color: #0040FF !important; }
+.bit-v3 [class*="text-[#C99A48]"], .bit-v3 [class*="text-[#E0C27B]"], .bit-v3 [class*="text-[#9B7739]"], .bit-v3 [class*="text-[#9b7739]"] { color: #0040FF !important; }
+.bit-v3 [class*="text-[#16352F]"], .bit-v3 [class*="text-[#14332C]"], .bit-v3 [class*="text-[#183B33]"] { color: #0A0D14 !important; }
+.bit-v3 .ledger-spine { background: #0A0D14 !important; }
