@@ -1,0 +1,8 @@
+{
+  "market": "HK",
+  "completed_session": {"date": "2026-08-20", "HSI": 25698.49, "change_pct": 0.8},
+  "intraday_snapshot": {"date": "2026-08-21", "timestamp_hkt": "10:56:52", "HSI": 25863.73, "change_pct": 0.64, "delayed": true, "must_not_be_called_close": true},
+  "market_question": "HK interim results need to provide a fundamental basis beyond morning index direction.",
+  "events": ["China Hongqiao", "CNOOC", "Zijin Mining", "ZTE", "Beike", "East Buy"],
+  "cross_market_status": "UNRESOLVED"
+}

@@ -1,0 +1,14 @@
+{
+  "market": "US",
+  "session_date": "2026-08-20",
+  "completed_session": true,
+  "index_returns_pct": {"S&P 500": -0.87, "Nasdaq": -1.00, "Dow": -1.32},
+  "macro": {"10Y_yield_pct": 4.69, "10Y_change_bp": 4, "30Y_yield_pct": 5.24, "30Y_change_bp": 4, "WTI_note": "above US$87; fifth day higher"},
+  "stock_evidence": [
+    {"ticker": "WMT", "price_return_pct": -9.2, "actual": "U.S. comparable sales +2.6%", "consensus": "LSEG +3.8%", "guidance": "full-year sales growth 4–5%"},
+    {"ticker": "DE", "price_return_pct": 6.9, "event": "raised full-year net-income forecast"},
+    {"ticker": "MRNA", "price_return_pct": -23.5, "event": "retraced prior clinical-data move"}
+  ],
+  "sector_context": "Energy was among the few gainers; staples, health care and consumer discretionary were among the weakest S&P groups.",
+  "next_validation": ["Long-end yields and oil", "Walmart peer read-through", "Relative performance of technology and consumer sectors"]
+}

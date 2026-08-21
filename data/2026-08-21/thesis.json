@@ -1,0 +1,22 @@
+{
+  "as_of_hkt": "2026-08-21T11:11:00+08:00",
+  "market_thesis": "财政部买回带来的利率减压只维持一天；长端收益率和油价重升，加上Walmart销售放缓，市场回到宏观／消费双重去风险。",
+  "previous_thesis_ledger": [
+    {
+      "thesis": "长端利率回落可缓解估值压力",
+      "status": "INVALIDATED",
+      "evidence": "10Y和30Y在8月20日均上行4bp。"
+    },
+    {
+      "thesis": "Walmart可确认消费韧性",
+      "status": "INVALIDATED",
+      "evidence": "美国可比销售+2.6%，低于LSEG预期的+3.8%，且WMT收跌9.2%。"
+    },
+    {
+      "thesis": "港股早盘强势足以推翻美股宏观压力",
+      "status": "UNRESOLVED",
+      "evidence": "8月21日10:56:52 HKT恒指盘中+0.64%，但当日HK业绩尚需验证其基本面承接。"
+    }
+  ],
+  "william_view": "我更倾向把周四理解为反弹条件被反向验证，而不是全面risk-off的终点。收益率和油价回落前，反弹仍需要由科技／消费相对表现来证明。"
+}

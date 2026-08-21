@@ -1,0 +1,80 @@
+/* The Market Ledger visual system — contemporary financial editorial, not a generic terminal dashboard. */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-display: "DM Serif Display", "Noto Sans TC", serif;
+  --font-sans: "Manrope", "Noto Sans TC", sans-serif;
+  --font-mono: "IBM Plex Mono", "Noto Sans TC", monospace;
+  --color-background: #F3EFE6;
+  --color-foreground: #16352F;
+  --color-card: #FAF7F0;
+  --color-card-foreground: #16352F;
+  --color-border: #E0D5C3;
+  --color-primary: #16352F;
+  --color-primary-foreground: #F8F1E3;
+  --color-muted: #EAE4D8;
+  --color-muted-foreground: #68756F;
+  --color-accent: #C99A48;
+  --color-accent-foreground: #16352F;
+  --color-ring: #C99A48;
+}
+
+:root {
+  --radius: 0px;
+  font-synthesis: none;
+}
+
+* { border-color: #E0D5C3; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #F3EFE6; color: #16352F; font-family: "Manrope", "Noto Sans TC", sans-serif; }
+button, input { font: inherit; }
+button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid #C99A48; outline-offset: 3px; }
+
+.font-display { font-family: "DM Serif Display", "Noto Sans TC", serif; }
+.font-mono { font-family: "IBM Plex Mono", "Noto Sans TC", monospace; }
+.ledger-spine { box-shadow: 12px 0 28px rgba(27, 48, 41, 0.08); }
+.ledger-spine::after { content: ""; position: absolute; right: 14px; top: 0; bottom: 0; width: 1px; background: rgba(201, 154, 72, 0.24); }
+.status-dot { width: 7px; height: 7px; border-radius: 999px; background: #5A9377; box-shadow: 0 0 0 3px rgba(90, 147, 119, 0.12); }
+.ledger-rule { width: 42px; height: 1px; display: block; background: #C99A48; }
+.section-kicker, .ledger-kicker { display: flex; align-items: center; gap: 0.6rem; font-family: "IBM Plex Mono", "Noto Sans TC", monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.19em; text-transform: uppercase; color: #9B7739; }
+.section-kicker::before, .ledger-kicker::before { content: ""; width: 38px; height: 1px; flex: 0 0 auto; background: #C99A48; }
+.section-title { margin: 0; max-width: 680px; font-family: "DM Serif Display", "Noto Sans TC", serif; font-size: clamp(2.15rem, 4vw, 3.75rem); line-height: 0.98; letter-spacing: -0.04em; color: #16352F; }
+.market-stat:last-child { border-right: 0; }
+.signal-file-tab { writing-mode: horizontal-tb; min-height: 52px; line-height: 1.35; }
+.breadth-metric { display: flex; min-width: 0; flex-direction: column; gap: 0.25rem; border-left: 1px solid rgba(224, 194, 123, 0.45); padding-left: 0.7rem; color: #D5DDD7; font-size: 0.68rem; line-height: 1.2; }
+.breadth-metric svg { color: #E0C27B; }
+.breadth-metric strong { color: #FFF7E7; font-family: "DM Serif Display", "Noto Sans TC", serif; font-size: 1.65rem; font-weight: 400; letter-spacing: -0.04em; }
+.market-reading-card { display: grid; grid-template-columns: auto 1fr; gap: 0.75rem; border-bottom: 1px solid #D4C9B8; padding-bottom: 1rem; color: #69756F; font-size: 0.875rem; line-height: 1.6; }
+.market-reading-card p:last-child { margin-top: 0.18rem; }
+.research-mark { position: relative; display: inline-block; flex: 0 0 auto; border: 1px solid #C99A48; background: #10342D; overflow: hidden; }
+.research-mark::before, .research-mark::after { content: ""; position: absolute; left: 22%; right: 22%; height: 1px; background: #E1C47D; transform-origin: left center; }
+.research-mark::before { top: 36%; transform: rotate(-34deg); }
+.research-mark::after { top: 62%; transform: rotate(20deg); }
+.research-mark i { position: absolute; top: 18%; bottom: 18%; width: 1px; background: rgba(225, 196, 125, 0.72); }
+.research-mark i:first-child { left: 30%; }
+.research-mark i:nth-child(2) { left: 43%; }
+.research-mark b { position: absolute; right: 16%; top: 19%; width: 6px; height: 6px; border-radius: 999px; background: #C99A48; box-shadow: 0 0 0 3px rgba(201, 154, 72, 0.15); }
+.research-slip { position: relative; overflow: hidden; border-top: 1px solid #D4AB5D; border-left: 1px solid #D4AB5D; border-right: 1px solid #E4D8C6; border-bottom: 1px solid #E4D8C6; background: #F3EEE3; }
+.research-slip::after { content: ""; position: absolute; top: 0; right: 0; width: 42px; height: 1px; background: #C99A48; transform: rotate(45deg) translate(12px, -9px); }
+.watch-slip { position: relative; padding-top: 1.5rem; }
+.watch-slip::before { content: ""; position: absolute; top: 0.75rem; left: 0; width: 20px; height: 1px; background: #C99A48; }
+
+/* V3 preview: charts are research exhibits with provenance, not standalone dashboard panels. */
+.v3-preview .section-title { font-size: clamp(1.95rem, 2.8vw, 3.15rem); }
+.v3-preview #overview h1 em { color: inherit; font-style: normal; }
+.v3-preview #breadth-export, .v3-preview #heatmap-export { position: relative; border-top: 1px solid #C99A48; border-bottom: 1px solid #D7C6A7; }
+.v3-preview #breadth-export::before, .v3-preview #heatmap-export::before { display: block; margin-bottom: 0.85rem; color: #8B7451; font-family: "IBM Plex Mono", "Noto Sans TC", monospace; font-size: 9px; font-weight: 500; letter-spacing: 0.12em; line-height: 1.55; }
+.v3-preview #breadth-export::before { content: "EXHIBIT 01 · SECTOR-BREADTH PROXY\A SOURCE: YAHOO FINANCE · 11 SELECT SECTOR SPDR ETFs · ADJUSTED CLOSE"; white-space: pre-line; }
+.v3-preview #heatmap-export::before { content: "EXHIBIT 02 · SECTOR RETURN MAP\A SOURCE: YAHOO FINANCE · 11 SELECT SECTOR SPDR ETFs · ADJUSTED CLOSE"; white-space: pre-line; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .market-stat, button, a { transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1); }
+}
+
+@media (max-width: 639px) {
+  .market-stat:not(:last-child) { border-right: 0; }
+}

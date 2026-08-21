@@ -1,0 +1,12 @@
+{
+  "as_of_hkt": "2026-08-21T11:11:00+08:00",
+  "sources": [
+    {"source_name": "Reuters — U.S. close", "source_type": "Secondary", "market": "US", "confidence": "High", "access_type": "Public", "url": "https://www.reuters.com/business/us-stock-futures-muted-bond-yields-resume-uptrend-ahead-walmarts-earnings-2026-08-20/"},
+    {"source_name": "Reuters — Walmart Q2", "source_type": "Secondary", "market": "US", "confidence": "High", "access_type": "Public", "url": "https://www.reuters.com/business/walmart-reports-rare-comparable-sales-miss-consumers-pare-back-spending-2026-08-20/"},
+    {"source_name": "Yahoo Finance — sector ETF charts", "source_type": "Market Data", "market": "US", "confidence": "Medium", "access_type": "Public", "url": "https://finance.yahoo.com/quote/XLE/history/", "note": "Adjusted daily closes for the 11 Select Sector SPDR ETFs; used as a sector-breadth proxy, not exchange advance-decline data."},
+    {"source_name": "Yahoo Finance — HSI delayed quote", "source_type": "Market Data", "market": "HK", "confidence": "Medium", "access_type": "Public", "url": "https://finance.yahoo.com/quote/%5EHSI/", "note": "Delayed intraday quote; clearly separated from completed close."},
+    {"source_name": "HKEX — board-meeting diary", "source_type": "Primary", "market": "HK", "confidence": "High", "access_type": "Public", "url": "https://www3.hkexnews.hk/reports/bmn/ebmn_c.htm"},
+    {"source_name": "Schwab — market calendar", "source_type": "Secondary", "market": "US", "confidence": "Medium", "access_type": "Public", "url": "https://www.schwab.com/learn/story/stock-market-update-open"}
+  ],
+  "bloomberg_status": "No verified Bloomberg Terminal, BLPAPI or Data License entitlement used in this run."
+}
