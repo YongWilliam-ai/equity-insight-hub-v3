@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BIT Thesis Ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["as_of_hkt", "market_thesis", "previous_thesis_ledger", "william_view"],
+  "properties": {
+    "as_of_hkt": {"type": "string", "format": "date-time", "description": "Current HKT report cutoff."},
+    "market_thesis": {"type": "string"},
+    "previous_thesis_ledger": {"type": "array", "items": {"type": "object", "required": ["thesis", "status", "evidence"], "additionalProperties": false, "properties": {"thesis": {"type": "string"}, "status": {"enum": ["CONFIRMED", "PARTIALLY_CONFIRMED", "INVALIDATED", "UNRESOLVED"]}, "evidence": {"type": "string"}}}},
+    "william_view": {"type": "string", "description": "Clearly labelled analyst interpretation, not a recommendation."}
+  }
+}

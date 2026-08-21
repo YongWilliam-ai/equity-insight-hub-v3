@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BIT U.S. Market Analytics",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["as_of", "source", "breadth_definition", "limitation", "latest", "files"],
+  "properties": {
+    "as_of": {"type": "string", "format": "date", "description": "Last adjusted-close date used in calculations."},
+    "source": {"type": "string"},
+    "breadth_definition": {"type": "string"},
+    "limitation": {"type": "string", "description": "Must state that this is a sector ETF proxy, not exchange A/D breadth."},
+    "latest": {"type": "object", "required": ["daily_breadth_pct", "five_day_breadth_pct", "twenty_day_breadth_pct", "spy_five_day_return_pct"], "properties": {"daily_breadth_pct": {"type": "number"}, "five_day_breadth_pct": {"type": "number"}, "twenty_day_breadth_pct": {"type": "number"}, "spy_five_day_return_pct": {"type": "number"}}, "additionalProperties": false},
+    "files": {"type": "object", "required": ["raw_input", "calculation_output"], "properties": {"raw_input": {"type": "string"}, "calculation_output": {"type": "string"}}, "additionalProperties": false}
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BIT Hong Kong Market Session",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["market", "completed_session", "market_question", "events", "cross_market_status"],
+  "properties": {
+    "market": {"const": "HK"},
+    "completed_session": {"type": "object", "required": ["date", "HSI", "change_pct"], "properties": {"date": {"type": "string", "format": "date"}, "HSI": {"type": "number"}, "change_pct": {"type": "number"}}, "additionalProperties": false},
+    "intraday_snapshot": {"type": "object", "required": ["date", "timestamp_hkt", "HSI", "change_pct", "delayed", "must_not_be_called_close"], "properties": {"date": {"type": "string", "format": "date"}, "timestamp_hkt": {"type": "string", "pattern": "^[0-2][0-9]:[0-5][0-9]:[0-5][0-9]$"}, "HSI": {"type": "number"}, "change_pct": {"type": "number"}, "delayed": {"type": "boolean"}, "must_not_be_called_close": {"const": true}}, "additionalProperties": false},
+    "market_question": {"type": "string"},
+    "events": {"type": "array", "items": {"type": "string"}},
+    "cross_market_status": {"enum": ["CONFIRMED", "PARTIALLY_CONFIRMED", "INVALIDATED", "UNRESOLVED"]}
+  }
+}

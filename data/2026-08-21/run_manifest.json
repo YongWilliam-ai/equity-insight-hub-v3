@@ -1,0 +1,29 @@
+{
+  "run_date_hkt": "2026-08-21",
+  "run_type": "retrospective_handoff_fixture",
+  "hkt_start_time": null,
+  "hkt_completion_time": "2026-08-21T11:11:00+08:00",
+  "us_session_used": {"date": "2026-08-20", "completed": true},
+  "hk_session_used": {"date": "2026-08-20", "completed": true},
+  "hk_intraday_cutoff": "2026-08-21T10:56:52+08:00",
+  "sources_checked": [
+    "Reuters — U.S. close",
+    "Reuters — Walmart Q2",
+    "Yahoo Finance — sector ETF charts",
+    "Yahoo Finance — HSI delayed quote",
+    "HKEX — board-meeting diary",
+    "Schwab — market calendar"
+  ],
+  "sources_failed": [],
+  "primary_verification_count": 1,
+  "unresolved_claims": [
+    "Whether 21 August Hong Kong intraday strength had sufficient fundamental support to overturn the U.S. macro pressure."
+  ],
+  "thesis_status_summary": {"confirmed": 0, "partially_confirmed": 0, "invalidated": 2, "unresolved": 1},
+  "tests_run": ["Retrospective schema fixture created during Claude handoff"],
+  "build_status": "NOT_APPLICABLE_TO_ORIGINAL_RUN",
+  "deployment_status": "NOT_APPLICABLE_TO_ORIGINAL_RUN",
+  "deployment_commit_sha": null,
+  "final_url": null,
+  "notes": "This is a retrospective audit fixture created for the Claude handoff. Start time and deployment details were not recorded in the original run and are intentionally not invented. Live runs must use the template with actual timestamps, test results, commit SHA, and URL."
+}

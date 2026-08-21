@@ -1,0 +1,20 @@
+import fs from "node:fs";
+import path from "node:path";
+import { validateDirectory } from "./validate-data.mjs";
+
+const date = "2026-08-21";
+const directory = path.join("data", date);
+const checks = [];
+const add = (name, pass, detail) => checks.push({ name, pass, detail });
+const errors = validateDirectory(directory);
+add("Core JSON data validates", errors.length === 0, errors.join("; ") || "five core data files are structurally valid");
+add("Historical report exists", fs.existsSync(path.join("reports", `${date}.md`)), `reports/${date}.md`);
+const page = fs.readFileSync(path.join("client", "src", "pages", "V3PreviewAug21.tsx"), "utf8");
+add("Five market paths are mapped", ["overview", "us", "hk", "cross", "sources"].every((value) => page.includes(`"${value}"`)), "Overview, U.S., HK, Cross-Market, Sources");
+add("Three language states are mapped", ["TW", "CN", "EN"].every((value) => page.includes(value)), "TW / CN / EN");
+add("HK intraday safeguard exists", page.includes("Delayed intraday quote") && page.includes("never a close"), "explicit intraday labelling");
+add("Heatmap semantic colors exist", page.includes("#078A72") && page.includes("#C93C00") && page.includes("#E5E7EB"), "green / red / neutral-grey mapping");
+add("Handoff schedule exists", fs.existsSync(path.join("handoff", "claude", "CLAUDE_SCHEDULE_PROMPT.md")), "schedule prompt present");
+for (const check of checks) console.log(`${check.pass ? "PASS" : "FAIL"} — ${check.name}: ${check.detail}`);
+if (checks.some((check) => !check.pass)) process.exit(1);
+console.log("CLAUDE DRY RUN PASS — no data changed, no deployment performed.");

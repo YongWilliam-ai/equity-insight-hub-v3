@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BIT Source Ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["as_of_hkt", "sources", "bloomberg_status"],
+  "properties": {
+    "as_of_hkt": {"type": "string", "format": "date-time"},
+    "sources": {"type": "array", "items": {"type": "object", "required": ["source_name", "source_type", "market", "confidence", "access_type", "url"], "properties": {"source_name": {"type": "string"}, "source_type": {"type": "string"}, "market": {"enum": ["US", "HK", "CROSS"]}, "confidence": {"enum": ["High", "Medium", "Low"]}, "access_type": {"type": "string"}, "url": {"type": "string", "format": "uri"}, "note": {"type": "string"}}, "additionalProperties": false}},
+    "bloomberg_status": {"type": "string", "description": "State entitlement actually used or explicitly state none."}
+  }
+}

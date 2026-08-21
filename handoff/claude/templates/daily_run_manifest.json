@@ -1,0 +1,19 @@
+{
+  "run_date_hkt": "YYYY-MM-DD",
+  "hkt_start_time": "YYYY-MM-DDTHH:MM:SS+08:00",
+  "hkt_completion_time": null,
+  "us_session_used": {"date": "YYYY-MM-DD", "completed": true},
+  "hk_session_used": {"date": "YYYY-MM-DD", "completed": true},
+  "hk_intraday_cutoff": null,
+  "sources_checked": [],
+  "sources_failed": [],
+  "primary_verification_count": 0,
+  "unresolved_claims": [],
+  "thesis_status_summary": {"confirmed": 0, "partially_confirmed": 0, "invalidated": 0, "unresolved": 0},
+  "tests_run": [],
+  "build_status": "NOT_RUN",
+  "deployment_status": "NOT_DEPLOYED",
+  "deployment_commit_sha": null,
+  "final_url": null,
+  "notes": "Copy this template into data/YYYY-MM-DD/run_manifest.json; do not leave placeholders in a completed live run."
+}

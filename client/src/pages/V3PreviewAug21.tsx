@@ -69,8 +69,18 @@ const i18n: Record<Language, any> = {
 };
 
 const pct = (value: number) => `${value > 0 ? "+" : ""}${value.toFixed(2)}%`;
-const heatColor = (value: number) => value >= 1.5 ? "#0040FF" : value > 0 ? "#478DFF" : value > -0.75 ? "#EDF1F7" : value > -1.5 ? "#FFB0B0" : "#F73636";
-const heatText = (value: number) => value > 0 ? "#FFFFFF" : "#0A0D14";
+// Market-performance semantics are intentionally independent from BIT Blue brand/UI semantics.
+// Positive returns: light teal → deep green. Near zero: neutral grey. Negative returns: light coral → deep red.
+const heatColor = (value: number) => {
+  if (value >= 2) return "#078A72";
+  if (value >= 0.5) return "#10B99A";
+  if (value > 0.1) return "#72D9C7";
+  if (value >= -0.1) return "#E5E7EB";
+  if (value > -0.5) return "#FFD2C3";
+  if (value > -2) return "#FF6A1A";
+  return "#C93C00";
+};
+const heatText = (value: number) => Math.abs(value) < 0.5 ? "#0A0D14" : "#FFFFFF";
 const statusClass = (value: string) => value === "INVALIDATED" ? "bg-[#F9584A]/10 text-[#C22F26]" : value === "UNRESOLVED" ? "bg-[#F6C82A]/20 text-[#765D00]" : "bg-[#2CBA60]/10 text-[#17733B]";
 
 function exportSvg(id: string, filename: string) { const svg = document.getElementById(id)?.querySelector("svg"); if (!svg) return; const rect = svg.getBoundingClientRect(); const copy = svg.cloneNode(true) as SVGSVGElement; copy.setAttribute("xmlns", "http://www.w3.org/2000/svg"); copy.setAttribute("width", String(Math.max(900, Math.round(rect.width)))); copy.setAttribute("height", String(Math.max(480, Math.round(rect.height)))); const url = URL.createObjectURL(new Blob([new XMLSerializer().serializeToString(copy)], { type: "image/svg+xml" })); const image = new Image(); image.onload = () => { const canvas = document.createElement("canvas"); canvas.width = Math.max(900, rect.width) * 2; canvas.height = Math.max(480, rect.height) * 2; const context = canvas.getContext("2d"); if (!context) return; context.scale(2, 2); context.fillStyle = "#FFFFFF"; context.fillRect(0, 0, canvas.width, canvas.height); context.drawImage(image, 0, 0, canvas.width / 2, canvas.height / 2); const link = document.createElement("a"); link.href = canvas.toDataURL("image/png"); link.download = filename; link.click(); URL.revokeObjectURL(url); }; image.src = url; }

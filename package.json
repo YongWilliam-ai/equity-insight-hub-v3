@@ -9,7 +9,11 @@
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
     "check": "tsc --noEmit",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "validate:data": "node scripts/validate-data.mjs",
+    "dry-run:claude": "node scripts/dry-run-claude.mjs",
+    "fetch:breadth": "node scripts/fetch_v3_breadth_data.mjs",
+    "analyse:breadth": "node scripts/analyse_v3_breadth_data.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",

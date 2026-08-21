@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BIT U.S. Market Session",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["market", "session_date", "completed_session", "index_returns_pct", "macro", "stock_evidence", "sector_context", "next_validation"],
+  "properties": {
+    "market": {"const": "US", "description": "Market identity; always US."},
+    "session_date": {"type": "string", "format": "date", "description": "Latest completed U.S. regular-session date."},
+    "completed_session": {"const": true, "description": "Guards against treating an in-progress U.S. session as a close."},
+    "index_returns_pct": {"type": "object", "required": ["S&P 500", "Nasdaq", "Dow"], "additionalProperties": {"type": "number"}, "properties": {"S&P 500": {"type": "number"}, "Nasdaq": {"type": "number"}, "Dow": {"type": "number"}}},
+    "macro": {"type": "object", "additionalProperties": true, "description": "Only price-action-relevant macro / rates / liquidity variables; provenance is kept in sources and research log."},
+    "stock_evidence": {"type": "array", "items": {"type": "object", "required": ["ticker", "price_return_pct"], "properties": {"ticker": {"type": "string"}, "price_return_pct": {"type": "number"}, "actual": {"type": "string"}, "consensus": {"type": "string"}, "guidance": {"type": "string"}, "event": {"type": "string"}}, "additionalProperties": true}},
+    "sector_context": {"type": "string"},
+    "next_validation": {"type": "array", "items": {"type": "string"}}
+  }
+}
