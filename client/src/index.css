@@ -1,26 +1,26 @@
-/* The Market Ledger visual system — contemporary financial editorial, not a generic terminal dashboard. */
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700&display=swap');
+/* BIT V3 — official-guide alignment: #0040FF / #0A0D14 / #FFFFFF lead; Readex Pro is the documented restricted-environment fallback. */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-display: "DM Serif Display", "Noto Sans TC", serif;
-  --font-sans: "Manrope", "Noto Sans TC", sans-serif;
+  --font-display: "Readex Pro", "Noto Sans TC", sans-serif;
+  --font-sans: "Readex Pro", "Noto Sans TC", sans-serif;
   --font-mono: "IBM Plex Mono", "Noto Sans TC", monospace;
-  --color-background: #F3EFE6;
-  --color-foreground: #16352F;
-  --color-card: #FAF7F0;
-  --color-card-foreground: #16352F;
-  --color-border: #E0D5C3;
-  --color-primary: #16352F;
-  --color-primary-foreground: #F8F1E3;
-  --color-muted: #EAE4D8;
-  --color-muted-foreground: #68756F;
-  --color-accent: #C99A48;
-  --color-accent-foreground: #16352F;
-  --color-ring: #C99A48;
+  --color-background: #FFFFFF;
+  --color-foreground: #0A0D14;
+  --color-card: #FFFFFF;
+  --color-card-foreground: #0A0D14;
+  --color-border: #B0B9C9;
+  --color-primary: #0040FF;
+  --color-primary-foreground: #FFFFFF;
+  --color-muted: #EDF1F7;
+  --color-muted-foreground: #526173;
+  --color-accent: #0040FF;
+  --color-accent-foreground: #FFFFFF;
+  --color-ring: #0040FF;
 }
 
 :root {
@@ -30,11 +30,11 @@
 
 * { border-color: #E0D5C3; }
 html { scroll-behavior: smooth; }
-body { margin: 0; min-width: 320px; background: #F3EFE6; color: #16352F; font-family: "Manrope", "Noto Sans TC", sans-serif; }
+body { margin: 0; min-width: 320px; background: #FFFFFF; color: #0A0D14; font-family: "Readex Pro", "Noto Sans TC", sans-serif; }
 button, input { font: inherit; }
-button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid #C99A48; outline-offset: 3px; }
+button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid #0040FF; outline-offset: 3px; }
 
-.font-display { font-family: "DM Serif Display", "Noto Sans TC", serif; }
+.font-display { font-family: "Readex Pro", "Noto Sans TC", sans-serif; }
 .font-mono { font-family: "IBM Plex Mono", "Noto Sans TC", monospace; }
 .ledger-spine { box-shadow: 12px 0 28px rgba(27, 48, 41, 0.08); }
 .ledger-spine::after { content: ""; position: absolute; right: 14px; top: 0; bottom: 0; width: 1px; background: rgba(201, 154, 72, 0.24); }
@@ -78,3 +78,29 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid 
 @media (max-width: 639px) {
   .market-stat:not(:last-child) { border-right: 0; }
 }
+
+/* Independent V3: scoped official BIT token alignment. Research copy and data remain unchanged. */
+.bit-v3 {
+  --bit-blue: #0040FF;
+  --bit-blue-soft: #478DFF;
+  --bit-black: #0A0D14;
+  --bit-white: #FFFFFF;
+  --bit-muted: #EDF1F7;
+  --bit-grey: #B0B9C9;
+  --bit-risk: #F73636;
+  background: var(--bit-white);
+  color: var(--bit-black);
+}
+.bit-v3 [class*="bg-[#F3EFE6]"], .bit-v3 [class*="bg-[#FAF7F0]"], .bit-v3 [class*="bg-[#F9F5EB]"], .bit-v3 [class*="bg-[#F7F1E6]"], .bit-v3 [class*="bg-[#F9F4EA]"], .bit-v3 [class*="bg-[#FAF7F0]"] { background-color: var(--bit-white) !important; }
+.bit-v3 [class*="bg-[#EAE4D8]"], .bit-v3 [class*="bg-[#EDE5D8]"], .bit-v3 [class*="bg-[#E7DED0]"] { background-color: var(--bit-muted) !important; }
+.bit-v3 [class*="bg-[#10332D]"], .bit-v3 [class*="bg-[#102D28]"], .bit-v3 [class*="bg-[#153A32]"], .bit-v3 [class*="bg-[#10342D]"], .bit-v3 [class*="bg-[#16382F]"] { background-color: var(--bit-black) !important; }
+.bit-v3 [class*="text-[#16352F]"], .bit-v3 [class*="text-[#14332C]"], .bit-v3 [class*="text-[#183B33]"], .bit-v3 [class*="text-[#405A51]"], .bit-v3 [class*="text-[#4F625B]"] { color: var(--bit-black) !important; }
+.bit-v3 [class*="border-[#C99A48]"], .bit-v3 [class*="border-[#E0C27B]"], .bit-v3 [class*="border-[#D7C6A7]"] { border-color: var(--bit-blue) !important; }
+.bit-v3 [class*="text-[#C99A48]"], .bit-v3 [class*="text-[#E0C27B]"], .bit-v3 [class*="text-[#9B7739]"], .bit-v3 [class*="text-[#9A7230]"] { color: var(--bit-blue) !important; }
+.bit-v3 .ledger-rule, .bit-v3 .section-kicker::before, .bit-v3 .ledger-kicker::before { background: var(--bit-blue); }
+.bit-v3 .section-kicker, .bit-v3 .ledger-kicker { color: var(--bit-blue); }
+.bit-v3 .research-mark { display: none; }
+.bit-v3 #overview::after { content: ""; pointer-events: none; position: absolute; inset: 0; opacity: .18; background: repeating-radial-gradient(circle at 78% 18%, rgba(255,255,255,.72) 0 1px, transparent 1px 34px); mix-blend-mode: screen; }
+.bit-v3 .bit-brand-label { font-family: "Readex Pro", "Noto Sans TC", sans-serif; font-size: 10px; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+.bit-v3 .bit-brand-label strong { color: #FFFFFF; font-size: 16px; letter-spacing: -.025em; }
+.bit-v3 .bit-brand-label span { color: #478DFF; }
