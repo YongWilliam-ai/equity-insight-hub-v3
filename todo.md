@@ -99,12 +99,12 @@
 
 ## BIT V3 Header Brand Correction — Preview Before Publish
 
-- [ ] 對照William提供的8月24日頁首截圖與既有BIT品牌檔案，確認正確BIT黑色字標、頁首背景、邊界、比例與導航配置。
-- [ ] 在本地V3套用頁首標誌、背景顏色與版面修正，不發布到GitHub Pages。
-- [ ] 產生桌面預覽，讓William確認視覺方向後才提交、推送及更新公開網站。
+- [x] 對照William提供的8月24日頁首截圖與既有BIT品牌檔案，確認正確BIT黑色字標、頁首背景、邊界、比例與導航配置。
+- [x] 在本地V3套用頁首標誌、背景顏色與版面修正，不發布到GitHub Pages。
+- [x] 產生桌面預覽，讓William確認視覺方向後才提交、推送及更新公開網站。
 
 ## BIT Internal Release Finalisation — 2026-08-24
 
-- [ ] 移除24 August頁面的「William’s View」個人歸屬，改為中性BIT市場研究觀點與驗證框架。
-- [ ] 全面檢查內部同事閱覽時的用語、資料時點、來源等級、未確認訊號、利益／推薦風險與研究免責聲明。
-- [ ] 完成型別、資料、建置及公開網址驗證後，才同步GitHub主分支與GitHub Pages。
+- [x] 移除24 August頁面的「William’s View」個人歸屬，改為中性BIT市場研究觀點與驗證框架。
+- [x] 全面檢查內部同事閱覽時的用語、資料時點、來源等級、未確認訊號、利益／推薦風險與研究免責聲明。
+- [x] 完成型別、資料、建置及公開網址驗證後，才同步GitHub主分支與GitHub Pages。
