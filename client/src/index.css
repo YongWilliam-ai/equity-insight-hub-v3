@@ -125,3 +125,11 @@ button:focus-visible, input:focus-visible, a:focus-visible { outline: 2px solid 
 .bit-v3 [class*="text-[#C99A48]"], .bit-v3 [class*="text-[#E0C27B]"], .bit-v3 [class*="text-[#9B7739]"], .bit-v3 [class*="text-[#9b7739]"] { color: #0040FF !important; }
 .bit-v3 [class*="text-[#16352F]"], .bit-v3 [class*="text-[#14332C]"], .bit-v3 [class*="text-[#183B33]"] { color: #0A0D14 !important; }
 .bit-v3 .ledger-spine { background: #0A0D14 !important; }
+
+/* 24 Aug header correction — mirrors the approved BIT reference: white field, black wordmark, warm-grey divider and active blue type with a restrained neutral rule. */
+.bit-v3.bit-page { background: #FFFFFF; }
+.bit-v3 .bit-reference-header { border-bottom: 0; box-shadow: none; }
+.bit-v3 .bit-reference-header .bit-action { border-radius: 0; }
+.bit-v3 .bit-reference-header button { letter-spacing: 0; }
+.bit-v3 .bit-wordmark-crop { display: block; width: 54px; height: 32px; object-fit: cover; object-position: center; }
+.bit-v3 .section-title { color: #0A0D14; font-family: "Matrixport Pro", system-ui, sans-serif; }
