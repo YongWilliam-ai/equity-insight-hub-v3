@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-08-24",
+  "one_line": "Friday's macro relief rally needs PCE, Nvidia and Jackson Hole to confirm that growth can hold without a renewed rates-and-oil valuation shock.",
+  "previous_thesis_review": [
+    { "thesis": "Higher yields and oil pressure valuation", "status": "PARTIALLY_CONFIRMED", "evidence": "Friday stocks rebounded, but 10Y remained 4.73% and oil finished a sharply higher week." },
+    { "thesis": "Consumer pressure could broaden beyond Walmart", "status": "UNRESOLVED", "evidence": "Ross was rewarded after a guide increase; one company cannot settle the broader consumer read-through." },
+    { "thesis": "AI hardware needs fundamental confirmation", "status": "UNRESOLVED", "evidence": "Nvidia has not reported; its Aug. 26 earnings remain the primary demand-and-guidance test." }
+  ],
+  "this_week": [
+    { "event": "BEA GDP second estimate and July PCE", "when": "Aug. 26, 08:30 ET / 20:30 HKT", "positive": "Inflation does not reaccelerate while activity remains consistent with a soft landing.", "negative": "Core inflation is firm enough to keep long-end yield pressure elevated." },
+    { "event": "NVIDIA FY27 Q2", "when": "Aug. 26, 14:00 PT / Aug. 27, 05:00 HKT", "positive": "Data-center demand and forward guide support AI infrastructure visibility.", "negative": "Caution on supply, customer capex or demand release reopens AI-hardware de-risking." },
+    { "event": "Jackson Hole", "when": "Aug. 27–29", "positive": "Communication reduces policy and long-end rate uncertainty.", "negative": "Inflation, fiscal or policy-framework uncertainty lifts discount-rate pressure." },
+    { "event": "Iran sanctions / Hormuz and trade risk", "when": "Weekend-to-week-open catalyst", "positive": "Oil and shipping risk premium continues to ease.", "negative": "Sanctions, shipping disruption or tariff escalation reaccelerates oil and inflation risk." }
+  ]
+}

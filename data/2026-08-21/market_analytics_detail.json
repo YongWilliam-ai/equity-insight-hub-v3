@@ -1,0 +1,488 @@
+{
+  "as_of": "2026-08-21",
+  "retrieved_at": "2026-08-24T02:40:45.502Z",
+  "source": "Yahoo Finance chart endpoint; adjusted daily close; public market-data fallback",
+  "methodology": {
+    "breadth_definition": "Percentage of the 11 Select Sector SPDR ETFs with a positive total return over the stated trailing trading-day window.",
+    "heatmap_definition": "Adjusted-close percentage return for the 11 Select Sector SPDR ETFs as of the stated U.S. close.",
+    "limitation": "Tradable sector-breadth proxy; not NYSE/Nasdaq advance-decline breadth and not constituent-level participation.",
+    "heatmap_color_semantics": "Positive green/teal, near-zero neutral grey, negative red; BIT Blue is reserved for UI/brand structure."
+  },
+  "trend": [
+    {
+      "date": "2026-06-22",
+      "dailyBreadth": null,
+      "fiveDayBreadth": null,
+      "twentyDayBreadth": null,
+      "spyOneDay": null,
+      "spyFiveDay": null,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-06-23",
+      "dailyBreadth": 63.6,
+      "fiveDayBreadth": null,
+      "twentyDayBreadth": null,
+      "spyOneDay": -1.45,
+      "spyFiveDay": null,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-06-24",
+      "dailyBreadth": 54.5,
+      "fiveDayBreadth": null,
+      "twentyDayBreadth": null,
+      "spyOneDay": -0.05,
+      "spyFiveDay": null,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-06-25",
+      "dailyBreadth": 63.6,
+      "fiveDayBreadth": null,
+      "twentyDayBreadth": null,
+      "spyOneDay": 0.14,
+      "spyFiveDay": null,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-06-26",
+      "dailyBreadth": 63.6,
+      "fiveDayBreadth": null,
+      "twentyDayBreadth": null,
+      "spyOneDay": -0.72,
+      "spyFiveDay": null,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-06-29",
+      "dailyBreadth": 54.5,
+      "fiveDayBreadth": 72.7,
+      "twentyDayBreadth": null,
+      "spyOneDay": 1.65,
+      "spyFiveDay": -0.46,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-06-30",
+      "dailyBreadth": 36.4,
+      "fiveDayBreadth": 45.5,
+      "twentyDayBreadth": null,
+      "spyOneDay": 0.78,
+      "spyFiveDay": 1.8,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-01",
+      "dailyBreadth": 63.6,
+      "fiveDayBreadth": 54.5,
+      "twentyDayBreadth": null,
+      "spyOneDay": -0.14,
+      "spyFiveDay": 1.71,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-02",
+      "dailyBreadth": 72.7,
+      "fiveDayBreadth": 63.6,
+      "twentyDayBreadth": null,
+      "spyOneDay": -0.13,
+      "spyFiveDay": 1.43,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-06",
+      "dailyBreadth": 45.5,
+      "fiveDayBreadth": 63.6,
+      "twentyDayBreadth": null,
+      "spyOneDay": 0.87,
+      "spyFiveDay": 3.06,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-07",
+      "dailyBreadth": 54.5,
+      "fiveDayBreadth": 63.6,
+      "twentyDayBreadth": null,
+      "spyOneDay": -0.48,
+      "spyFiveDay": 0.91,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-08",
+      "dailyBreadth": 18.2,
+      "fiveDayBreadth": 63.6,
+      "twentyDayBreadth": null,
+      "spyOneDay": -0.31,
+      "spyFiveDay": -0.18,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-09",
+      "dailyBreadth": 63.6,
+      "fiveDayBreadth": 54.5,
+      "twentyDayBreadth": null,
+      "spyOneDay": 0.85,
+      "spyFiveDay": 0.8,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-10",
+      "dailyBreadth": 90.9,
+      "fiveDayBreadth": 45.5,
+      "twentyDayBreadth": null,
+      "spyOneDay": 0.43,
+      "spyFiveDay": 1.37,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-13",
+      "dailyBreadth": 54.5,
+      "fiveDayBreadth": 45.5,
+      "twentyDayBreadth": null,
+      "spyOneDay": -0.77,
+      "spyFiveDay": -0.28,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-14",
+      "dailyBreadth": 45.5,
+      "fiveDayBreadth": 36.4,
+      "twentyDayBreadth": null,
+      "spyOneDay": 0.36,
+      "spyFiveDay": 0.55,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-15",
+      "dailyBreadth": 45.5,
+      "fiveDayBreadth": 63.6,
+      "twentyDayBreadth": null,
+      "spyOneDay": 0.4,
+      "spyFiveDay": 1.26,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-16",
+      "dailyBreadth": 81.8,
+      "fiveDayBreadth": 72.7,
+      "twentyDayBreadth": null,
+      "spyOneDay": -0.54,
+      "spyFiveDay": -0.13,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-17",
+      "dailyBreadth": 9.1,
+      "fiveDayBreadth": 45.5,
+      "twentyDayBreadth": null,
+      "spyOneDay": -0.99,
+      "spyFiveDay": -1.54,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-20",
+      "dailyBreadth": 27.3,
+      "fiveDayBreadth": 27.3,
+      "twentyDayBreadth": null,
+      "spyOneDay": -0.16,
+      "spyFiveDay": -0.95,
+      "spyTwentyDay": null
+    },
+    {
+      "date": "2026-07-21",
+      "dailyBreadth": 63.6,
+      "fiveDayBreadth": 36.4,
+      "twentyDayBreadth": 63.6,
+      "spyOneDay": 0.83,
+      "spyFiveDay": -0.47,
+      "spyTwentyDay": 0.52
+    },
+    {
+      "date": "2026-07-22",
+      "dailyBreadth": 45.5,
+      "fiveDayBreadth": 54.5,
+      "twentyDayBreadth": 81.8,
+      "spyOneDay": -0.12,
+      "spyFiveDay": -0.98,
+      "spyTwentyDay": 1.89
+    },
+    {
+      "date": "2026-07-23",
+      "dailyBreadth": 36.4,
+      "fiveDayBreadth": 36.4,
+      "twentyDayBreadth": 54.5,
+      "spyOneDay": -1.23,
+      "spyFiveDay": -1.67,
+      "spyTwentyDay": 0.67
+    },
+    {
+      "date": "2026-07-24",
+      "dailyBreadth": 90.9,
+      "fiveDayBreadth": 72.7,
+      "twentyDayBreadth": 63.6,
+      "spyOneDay": 0.1,
+      "spyFiveDay": -0.59,
+      "spyTwentyDay": 0.63
+    },
+    {
+      "date": "2026-07-27",
+      "dailyBreadth": 63.6,
+      "fiveDayBreadth": 72.7,
+      "twentyDayBreadth": 63.6,
+      "spyOneDay": 0.02,
+      "spyFiveDay": -0.4,
+      "spyTwentyDay": 1.39
+    },
+    {
+      "date": "2026-07-28",
+      "dailyBreadth": 63.6,
+      "fiveDayBreadth": 63.6,
+      "twentyDayBreadth": 63.6,
+      "spyOneDay": 0.24,
+      "spyFiveDay": -0.99,
+      "spyTwentyDay": -0.02
+    },
+    {
+      "date": "2026-07-29",
+      "dailyBreadth": 18.2,
+      "fiveDayBreadth": 54.5,
+      "twentyDayBreadth": 63.6,
+      "spyOneDay": -1.54,
+      "spyFiveDay": -2.4,
+      "spyTwentyDay": -2.32
+    },
+    {
+      "date": "2026-07-30",
+      "dailyBreadth": 45.5,
+      "fiveDayBreadth": 63.6,
+      "twentyDayBreadth": 54.5,
+      "spyOneDay": 1.68,
+      "spyFiveDay": 0.48,
+      "spyTwentyDay": -0.55
+    },
+    {
+      "date": "2026-07-31",
+      "dailyBreadth": 36.4,
+      "fiveDayBreadth": 36.4,
+      "twentyDayBreadth": 36.4,
+      "spyOneDay": 0.72,
+      "spyFiveDay": 1.1,
+      "spyTwentyDay": 0.3
+    },
+    {
+      "date": "2026-08-03",
+      "dailyBreadth": 72.7,
+      "fiveDayBreadth": 45.5,
+      "twentyDayBreadth": 63.6,
+      "spyOneDay": 1.42,
+      "spyFiveDay": 2.51,
+      "spyTwentyDay": 0.85
+    },
+    {
+      "date": "2026-08-04",
+      "dailyBreadth": 63.6,
+      "fiveDayBreadth": 54.5,
+      "twentyDayBreadth": 81.8,
+      "spyOneDay": 1.8,
+      "spyFiveDay": 4.11,
+      "spyTwentyDay": 3.16
+    },
+    {
+      "date": "2026-08-05",
+      "dailyBreadth": 45.5,
+      "fiveDayBreadth": 54.5,
+      "twentyDayBreadth": 90.9,
+      "spyOneDay": -0.2,
+      "spyFiveDay": 5.53,
+      "spyTwentyDay": 3.27
+    },
+    {
+      "date": "2026-08-06",
+      "dailyBreadth": 27.3,
+      "fiveDayBreadth": 63.6,
+      "twentyDayBreadth": 81.8,
+      "spyOneDay": -0.16,
+      "spyFiveDay": 3.62,
+      "spyTwentyDay": 2.24
+    },
+    {
+      "date": "2026-08-07",
+      "dailyBreadth": 81.8,
+      "fiveDayBreadth": 72.7,
+      "twentyDayBreadth": 81.8,
+      "spyOneDay": 0.61,
+      "spyFiveDay": 3.51,
+      "spyTwentyDay": 2.43
+    },
+    {
+      "date": "2026-08-10",
+      "dailyBreadth": 45.5,
+      "fiveDayBreadth": 81.8,
+      "twentyDayBreadth": 81.8,
+      "spyOneDay": -0.03,
+      "spyFiveDay": 2.03,
+      "spyTwentyDay": 3.18
+    },
+    {
+      "date": "2026-08-11",
+      "dailyBreadth": 36.4,
+      "fiveDayBreadth": 36.4,
+      "twentyDayBreadth": 72.7,
+      "spyOneDay": -0.32,
+      "spyFiveDay": -0.1,
+      "spyTwentyDay": 2.49
+    },
+    {
+      "date": "2026-08-12",
+      "dailyBreadth": 72.7,
+      "fiveDayBreadth": 36.4,
+      "twentyDayBreadth": 72.7,
+      "spyOneDay": 0.25,
+      "spyFiveDay": 0.35,
+      "spyTwentyDay": 2.34
+    },
+    {
+      "date": "2026-08-13",
+      "dailyBreadth": 72.7,
+      "fiveDayBreadth": 100,
+      "twentyDayBreadth": 72.7,
+      "spyOneDay": 0.7,
+      "spyFiveDay": 1.21,
+      "spyTwentyDay": 3.62
+    },
+    {
+      "date": "2026-08-14",
+      "dailyBreadth": 63.6,
+      "fiveDayBreadth": 81.8,
+      "twentyDayBreadth": 81.8,
+      "spyOneDay": -0.2,
+      "spyFiveDay": 0.4,
+      "spyTwentyDay": 4.45
+    },
+    {
+      "date": "2026-08-17",
+      "dailyBreadth": 18.2,
+      "fiveDayBreadth": 45.5,
+      "twentyDayBreadth": 72.7,
+      "spyOneDay": -0.47,
+      "spyFiveDay": -0.05,
+      "spyTwentyDay": 4.12
+    },
+    {
+      "date": "2026-08-18",
+      "dailyBreadth": 36.4,
+      "fiveDayBreadth": 54.5,
+      "twentyDayBreadth": 81.8,
+      "spyOneDay": -0.68,
+      "spyFiveDay": -0.4,
+      "spyTwentyDay": 2.56
+    },
+    {
+      "date": "2026-08-19",
+      "dailyBreadth": 54.5,
+      "fiveDayBreadth": 63.6,
+      "twentyDayBreadth": 81.8,
+      "spyOneDay": 0.21,
+      "spyFiveDay": -0.44,
+      "spyTwentyDay": 2.9
+    },
+    {
+      "date": "2026-08-20",
+      "dailyBreadth": 18.2,
+      "fiveDayBreadth": 27.3,
+      "twentyDayBreadth": 81.8,
+      "spyOneDay": -0.84,
+      "spyFiveDay": -1.96,
+      "spyTwentyDay": 3.31
+    },
+    {
+      "date": "2026-08-21",
+      "dailyBreadth": 72.7,
+      "fiveDayBreadth": 27.3,
+      "twentyDayBreadth": 72.7,
+      "spyOneDay": 0.41,
+      "spyFiveDay": -1.37,
+      "spyTwentyDay": 3.63
+    }
+  ],
+  "sector_heatmap": [
+    {
+      "symbol": "XLB",
+      "label": "Materials",
+      "oneDay": 2.14,
+      "fiveDay": 1.9,
+      "twentyDay": 4.45
+    },
+    {
+      "symbol": "XLV",
+      "label": "Health Care",
+      "oneDay": 1.29,
+      "fiveDay": 4.33,
+      "twentyDay": 7.41
+    },
+    {
+      "symbol": "XLY",
+      "label": "Consumer Discretionary",
+      "oneDay": 1.15,
+      "fiveDay": -0.15,
+      "twentyDay": 7.87
+    },
+    {
+      "symbol": "XLF",
+      "label": "Financials",
+      "oneDay": 0.93,
+      "fiveDay": -1.17,
+      "twentyDay": 2.08
+    },
+    {
+      "symbol": "XLP",
+      "label": "Consumer Staples",
+      "oneDay": 0.79,
+      "fiveDay": -0.12,
+      "twentyDay": 2.21
+    },
+    {
+      "symbol": "XLC",
+      "label": "Communication Services",
+      "oneDay": 0.65,
+      "fiveDay": -1.37,
+      "twentyDay": 4.8
+    },
+    {
+      "symbol": "XLI",
+      "label": "Industrials",
+      "oneDay": 0.27,
+      "fiveDay": -3.36,
+      "twentyDay": -1.32
+    },
+    {
+      "symbol": "XLK",
+      "label": "Technology",
+      "oneDay": 0.11,
+      "fiveDay": -3.53,
+      "twentyDay": 4.22
+    },
+    {
+      "symbol": "XLRE",
+      "label": "Real Estate",
+      "oneDay": 0,
+      "fiveDay": -0.42,
+      "twentyDay": -1.89
+    },
+    {
+      "symbol": "XLE",
+      "label": "Energy",
+      "oneDay": -0.17,
+      "fiveDay": 2.79,
+      "twentyDay": 6.74
+    },
+    {
+      "symbol": "XLU",
+      "label": "Utilities",
+      "oneDay": -2.28,
+      "fiveDay": -3.48,
+      "twentyDay": -7.6
+    }
+  ]
+}

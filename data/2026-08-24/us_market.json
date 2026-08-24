@@ -1,0 +1,28 @@
+{
+  "as_of": "2026-08-21",
+  "session_type": "completed_us_regular_session",
+  "index_close": {
+    "Dow": { "value": 53277.01, "change_pct": 0.98 },
+    "S&P 500": { "value": 7674.37, "change_pct": 0.43 },
+    "Nasdaq": { "value": 26180.46, "change_pct": 0.44 }
+  },
+  "weekly_change_pct": { "Dow": -0.85, "S&P 500": -1.43, "Nasdaq": -2.05 },
+  "breadth": { "nyse_adv_dec": "1.68:1", "nasdaq_adv_dec": "1.85:1", "volume_bn": 14.91, "volume_20d_avg_bn": 16.62 },
+  "drivers": [
+    { "title": "Flash PMI growth relief", "fact": "August flash services PMI 56.8; composite PMI 56.0; manufacturing PMI 53.2.", "read_through": "Strong services postponed immediate slowdown concerns but did not remove inflation or rates risk." },
+    { "title": "Long-end yields and oil stayed elevated", "fact": "10Y 4.73%, 30Y 5.266%; Brent US$94.39, up 6.39% for the week.", "read_through": "Friday's equity rebound did not resolve the discount-rate and reflation constraint." },
+    { "title": "Weekly positioning remains fragile", "fact": "S&P 500 and Nasdaq fell 1.43% and 2.05% for the week despite Friday's gain.", "read_through": "Treat the move as a relief rally until rates, oil and earnings confirmation improve together." }
+  ],
+  "sector_snapshot": [
+    { "label": "Materials", "change_pct": 2.2 },
+    { "label": "Health care", "change_pct": 1.3 },
+    { "label": "Financials", "change_pct": 1.0 },
+    { "label": "Energy", "change_pct": -0.2 },
+    { "label": "Utilities", "change_pct": -2.3 }
+  ],
+  "companies": [
+    { "ticker": "NVDA", "reaction": "US$214.72, -0.98%", "event": "FY27 Q2 results scheduled for Aug. 26, 14:00 PT.", "watch": "Data-center demand, delivery cadence, customer capex and forward guide." },
+    { "ticker": "ROST", "reaction": "+4.4%", "event": "Beat quarterly expectations and raised annual profit forecast.", "watch": "Whether consumer resilience broadens beyond a single value retailer." },
+    { "ticker": "HOOD / COIN / MSTR", "reaction": "+13.7% / +8.2% / +6.0%", "event": "Advanced with bitcoin during Friday's alternative-asset rebound.", "watch": "Price, volume and policy confirmation rather than one-session beta." }
+  ]
+}

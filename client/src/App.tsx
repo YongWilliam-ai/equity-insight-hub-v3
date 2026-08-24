@@ -6,11 +6,13 @@ import { Route, Router as WouterRouter, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import V3PreviewAug21 from "./pages/V3PreviewAug21";
+import WeekendAug24 from "./pages/WeekendAug24";
 
 function Routes() {
   return (
     <Switch>
-      <Route path="/" component={V3PreviewAug21} />
+      <Route path="/" component={WeekendAug24} />
+      <Route path="/archive/2026-08-21" component={V3PreviewAug21} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

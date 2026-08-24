@@ -1,0 +1,14 @@
+{
+  "as_of": "2026-08-24",
+  "sources": [
+    { "id": 1, "market": "U.S.", "tier": "Tier 2", "label": "Reuters — 21 August U.S. market close", "url": "https://www.reuters.com/business/us-stock-futures-rise-after-sharp-losses-prior-session-2026-08-21/" },
+    { "id": 2, "market": "U.S.", "tier": "Tier 2", "label": "Reuters — 21 August U.S. PMI", "url": "https://www.reuters.com/business/us-service-sector-fuels-acceleration-business-activity-sp-global-says-2026-08-21/" },
+    { "id": 3, "market": "Cross-market", "tier": "Tier 2", "label": "Reuters — rates, currencies, gold and bitcoin", "url": "https://www.reuters.com/world/china/global-markets-global-markets-2026-08-21/" },
+    { "id": 4, "market": "Cross-market", "tier": "Tier 2", "label": "Reuters — oil settlement and Iran supply risk", "url": "https://www.reuters.com/business/energy/oil-set-second-weekly-rise-unsettled-us-iran-war-crimps-supply-2026-08-21/" },
+    { "id": 5, "market": "U.S.", "tier": "Tier 1", "label": "NVIDIA Investor Relations — FY27 Q2 event", "url": "https://investor.nvidia.com/events-and-presentations/events-and-presentations/event-details/2026/NVIDIA-2nd-Quarter-FY27-Financial-Results/default.aspx" },
+    { "id": 6, "market": "Hong Kong", "tier": "Public market data", "label": "Yahoo Finance — HSI historical data", "url": "https://finance.yahoo.com/quote/%5EHSI/history/" },
+    { "id": 7, "market": "U.S.", "tier": "Tier 1", "label": "BEA — release schedule", "url": "https://www.bea.gov/news/schedule" },
+    { "id": 8, "market": "Hong Kong", "tier": "Tier 2", "label": "Reuters — Alibaba share placement", "url": "https://www.reuters.com/business/retail-consumer/alibaba-shares-fall-8-after-10-billion-hong-kong-share-sale-2026-08-24/" },
+    { "id": 9, "market": "Cross-market", "tier": "Tier 1", "label": "Kansas City Fed — Jackson Hole 2026", "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/" }
+  ]
+}
