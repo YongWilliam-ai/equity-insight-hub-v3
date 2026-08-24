@@ -9,6 +9,8 @@
     { "id": 6, "market": "Hong Kong", "tier": "Public market data", "label": "Yahoo Finance — HSI historical data", "url": "https://finance.yahoo.com/quote/%5EHSI/history/" },
     { "id": 7, "market": "U.S.", "tier": "Tier 1", "label": "BEA — release schedule", "url": "https://www.bea.gov/news/schedule" },
     { "id": 8, "market": "Hong Kong", "tier": "Tier 2", "label": "Reuters — Alibaba share placement", "url": "https://www.reuters.com/business/retail-consumer/alibaba-shares-fall-8-after-10-billion-hong-kong-share-sale-2026-08-24/" },
-    { "id": 9, "market": "Cross-market", "tier": "Tier 1", "label": "Kansas City Fed — Jackson Hole 2026", "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/" }
+    { "id": 9, "market": "Cross-market", "tier": "Tier 1", "label": "Kansas City Fed — Jackson Hole 2026", "url": "https://www.kansascityfed.org/research/jackson-hole-economic-symposium/" },
+    { "id": 12, "market": "Asia / Semiconductors", "tier": "Tier 2", "label": "CNBC — Samsung shareholder return package", "url": "https://www.cnbc.com/2026/08/21/samsung-shareholder-return-package-sk-hynix-buyback-ai-chip-boom.html" },
+    { "id": 13, "market": "AI hardware", "tier": "Tier 3", "label": "iTnews / Bloomberg-sourced NVIDIA server-price report; Reuters verification limitation", "url": "https://www.itnews.com.au/news/nvidia-customers-notified-about-ai-related-price-hikes-628364" }
   ]
 }

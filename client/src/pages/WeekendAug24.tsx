@@ -3,7 +3,7 @@
  * Design contract: official BIT white/black/blue system; market-performance colour is reserved for sector returns.
  * Data contract: only 21 Aug completed sessions and clearly labelled next-session / weekend catalysts are shown.
  */
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { ArrowRight, CalendarDays, CheckCircle2, ChevronRight, CircleAlert, Download, ExternalLink, TrendingUp } from "lucide-react";
 import usMarketData from "../../../data/2026-08-24/us_market.json";
 import hkMarketData from "../../../data/2026-08-24/hk_market.json";
@@ -51,6 +51,17 @@ export default function WeekendAug24() {
   const [section, setSection] = useState<Section>(() => (["us", "hk", "week", "sources"].includes(initial.get("market") || "") ? initial.get("market") as Section : "overview"));
   const t = copy[language];
   const go = (next: Section, lang = language) => { setSection(next); setLanguage(lang); const url = new URL(window.location.href); url.searchParams.set("market", next); url.searchParams.set("lang", lang); window.history.replaceState({}, "", url); window.scrollTo({ top: 0, behavior: "smooth" }); };
+  useEffect(() => {
+    const routeHistory = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      if (target.closest('a[href*="/archive/2026-08-21"]')) {
+        event.preventDefault();
+        window.location.assign(`${base}?date=2026-08-21&lang=${language}`);
+      }
+    };
+    document.addEventListener("click", routeHistory);
+    return () => document.removeEventListener("click", routeHistory);
+  }, [language]);
   const nav = (Object.keys(t.nav) as Section[]).map((key) => ({ key, label: t.nav[key] }));
   const currentSourceRows = useMemo(() => sources.filter((row) => section === "sources" || section === "overview" || row.market === (section === "hk" ? "Hong Kong" : section === "us" ? "U.S." : "Cross-market")), [section]);
   const translatedDrivers = language === "EN" ? us.drivers : us.drivers.map((x: any, i: number) => {

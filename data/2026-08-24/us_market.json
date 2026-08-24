@@ -24,5 +24,10 @@
     { "ticker": "NVDA", "reaction": "US$214.72, -0.98%", "event": "FY27 Q2 results scheduled for Aug. 26, 14:00 PT.", "watch": "Data-center demand, delivery cadence, customer capex and forward guide." },
     { "ticker": "ROST", "reaction": "+4.4%", "event": "Beat quarterly expectations and raised annual profit forecast.", "watch": "Whether consumer resilience broadens beyond a single value retailer." },
     { "ticker": "HOOD / COIN / MSTR", "reaction": "+13.7% / +8.2% / +6.0%", "event": "Advanced with bitcoin during Friday's alternative-asset rebound.", "watch": "Price, volume and policy confirmation rather than one-session beta." }
+  ],
+  "industry_signals": [
+    { "key": "nvidia_fy27_q2", "status": "confirmed_schedule", "fact": "NVIDIA FY27 Q2 results and conference call are officially scheduled for 26 Aug, 14:00 PT / 17:00 ET.", "source_ids": [5] },
+    { "key": "nvidia_server_price_report", "status": "reported_unconfirmed", "claim": "A Bloomberg-sourced report says some AI-server systems could rise by more than 15% in 2027.", "verification_boundary": "Reuters could not immediately verify the report and NVIDIA had not commented; do not treat it as company-confirmed fact.", "source_ids": [13] },
+    { "key": "samsung_shareholder_returns", "status": "confirmed_context", "fact": "Samsung expects 2026 shareholder returns of 90–110tn won; details outside the stated Q3 cash dividend remain subject to board decision.", "source_ids": [12] }
   ]
 }

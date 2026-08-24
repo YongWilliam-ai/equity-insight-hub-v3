@@ -5,13 +5,19 @@ import NotFound from "@/pages/NotFound";
 import { Route, Router as WouterRouter, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
+import FullReportAug21 from "./pages/FullReportAug21";
 import V3PreviewAug21 from "./pages/V3PreviewAug21";
-import WeekendAug24 from "./pages/WeekendAug24";
+import WeekendAug24Full from "./pages/WeekendAug24Full";
+
+function RootRoute() {
+  const date = new URLSearchParams(window.location.search).get("date");
+  return date === "2026-08-21" ? <FullReportAug21 /> : <WeekendAug24Full />;
+}
 
 function Routes() {
   return (
     <Switch>
-      <Route path="/" component={WeekendAug24} />
+      <Route path="/" component={RootRoute} />
       <Route path="/archive/2026-08-21" component={V3PreviewAug21} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
