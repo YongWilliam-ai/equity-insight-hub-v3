@@ -24,5 +24,5 @@ First, give me a short implementation plan that closes the readiness gates witho
 
 Do not create or activate a recurring schedule, deploy a live report, or claim publication success until every exit gate in CLAUDE_MIGRATION_READINESS_2026-08-24.md passes. Do not use protected content without entitlement. Do not infer article bodies from snippets. Do not commit secrets, cookies, browser sessions, API keys, customer data or licensed documents.
 
-After I approve your implementation plan, work in small, reviewable commits. For each commit: explain the changed contract, run the relevant schema/type/build/browser tests, show any remaining gaps, and preserve an explicit NOT_DEPLOYED status until public deployment is verified.
+You are authorised to edit the V3 repository to close the stated migration/readiness gaps. Work in small, reviewable commits and push approved, tested migration fixes to `main`. For each commit: explain the changed contract, run the relevant schema/type/build/browser tests, show any remaining gaps, and preserve an explicit NOT_DEPLOYED status until public deployment is verified. Do not create or activate an unattended schedule, and do not deploy a live daily report, until the readiness gates pass.
 ```

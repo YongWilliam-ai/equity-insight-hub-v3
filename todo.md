@@ -115,3 +115,8 @@
 - [x] 撰寫Claude可直接執行的每日研究、資料、品質閘門、故障降級與發布操作包。
 - [x] 整理Claude必須上傳的檔案、連結與權限，並標記敏感資料不得上傳。
 - [x] 提供先修復B1／B2與授權GitHub寫入後才啟用排程的最終移交次序。
+
+## Claude Edit Authorisation Clarification
+
+- [x] 將Claude首條遷移指令改為明確允許在V3 repository內修復阻塞點、建立小型可審核提交及推送main。
+- [x] 保留未通過readiness gates前不得啟用無人排程或宣稱公開發布成功的邊界。
