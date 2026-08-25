@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-08-25",
+  "market_thesis": "The 24 Aug U.S. session was a technology-led de-risking move into a catalyst-heavy week: lower long yields did not offset AI-hardware valuation, policy and earnings uncertainty. The next test is whether consumer, inflation/growth and NVIDIA evidence stabilise the valuation debate rather than merely shift risk between sectors.",
+  "previous_thesis_review": [
+    {
+      "prior_focus": "24 Aug weekend thesis: PCE/GDP, NVIDIA and Jackson Hole must jointly test growth, inflation and AI capex.",
+      "status": "still_unresolved",
+      "evidence": "The next completed U.S. session showed tech-led weakness before those scheduled tests occurred; official results were not yet available."
+    }
+  ],
+  "this_week": [
+    {
+      "id": "consumer_confidence",
+      "event": "Conference Board Consumer Confidence",
+      "when": "25 Aug 10:00 ET / 26 Aug 22:00 HKT",
+      "official_boundary": "At report cutoff, the latest official release was July; August was scheduled, not a known result.",
+      "positive": "A resilient reading without a further deterioration in expectations supports the consumer-resilience leg of the soft-landing thesis.",
+      "negative": "A material decline, especially in expectations or labour-market assessments, raises the risk that growth support is weakening."
+    },
+    {
+      "id": "bea",
+      "event": "GDP second estimate and July Personal Income & Outlays / PCE",
+      "when": "26 Aug 08:30 ET / 26 Aug 20:30 HKT",
+      "official_boundary": "Scheduled by BEA; no result was available at the 25 Aug report cutoff.",
+      "positive": "Growth remains orderly and price pressure does not reaccelerate, allowing long yields to stabilise.",
+      "negative": "A hotter inflation signal or rate-sensitive growth concern renews discount-rate pressure."
+    },
+    {
+      "id": "nvidia",
+      "event": "NVIDIA FY27 Q2 financial results",
+      "when": "26 Aug 14:00 PT / 27 Aug 05:00 HKT",
+      "official_boundary": "Officially scheduled; all revenue, Blackwell cadence and guidance outcomes remain unknown before release.",
+      "positive": "Data-centre demand, delivery cadence and forward commentary provide evidence that AI infrastructure spending remains visible.",
+      "negative": "Cautious supply, customer-capex or demand commentary extends AI-hardware de-risking."
+    },
+    {
+      "id": "jackson_hole",
+      "event": "Jackson Hole Economic Policy Symposium / Warsh keynote",
+      "when": "27–29 Aug; Warsh keynote 28 Aug 10:00 ET / 22:00 HKT",
+      "official_boundary": "The Kansas City Fed confirmed the symposium dates; the Federal Reserve calendar confirmed Warsh's keynote.",
+      "positive": "Communication reduces uncertainty around the policy and long-yield framework.",
+      "negative": "Inflation, fiscal or policy-framework concerns keep the long-end risk premium elevated."
+    }
+  ]
+}

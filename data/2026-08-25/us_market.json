@@ -1,0 +1,46 @@
+{
+  "as_of": "2026-08-25",
+  "session_type": "completed_us_regular_session",
+  "completed_session_date": "2026-08-24",
+  "index_close": {
+    "Dow Jones": { "value": 53417.16, "change_pct": 0.26 },
+    "S&P 500": { "value": 7652.86, "change_pct": -0.28 },
+    "Nasdaq Composite": { "value": 25980.19, "change_pct": -0.76 }
+  },
+  "macro": {
+    "ten_year_yield": "4.70%",
+    "ten_year_note": "CNBC reported the 10-year Treasury yield fell by more than 3 basis points on the completed session.",
+    "buyback_fact": "Treasury announced on 19 Aug that long-end liquidity-support buyback operation maximums will rise from US$2bn to at least US$4bn per operation from 9 Sep.",
+    "sanctions_fact": "Treasury launched Operation Economic Outcast on 24 Aug, including sectoral determinations covering digital assets, technology, gold, aviation and shipping."
+  },
+  "drivers": [
+    {
+      "id": "technology_de_risking",
+      "fact": "Reuters reported chip stocks sold off: NVIDIA -2.9%, Micron -5.8% and Broadcom -2.6%; the SOX index declined.",
+      "boundary": "The reporting supports a technology-led drag, not a proof that one policy headline independently caused every move.",
+      "source_ids": [1]
+    },
+    {
+      "id": "rates_and_policy",
+      "fact": "The 10-year yield fell to about 4.70% while investors assessed Treasury buyback discussion and Iran-related policy developments.",
+      "boundary": "The official buyback expansion is scheduled for 9 Sep; a near-US$1tn TGA funding claim is not an announced allocation.",
+      "source_ids": [1, 2, 3]
+    },
+    {
+      "id": "earnings_risk",
+      "fact": "NVIDIA is scheduled to report FY27 Q2 on 26 Aug at 14:00 PT; the result was not available at this report cutoff.",
+      "boundary": "The earnings event is a validation point, not a pre-known result.",
+      "source_ids": [4]
+    }
+  ],
+  "companies": [
+    { "ticker": "NVDA", "reaction": "-2.9%", "source_ids": [1, 4, 9] },
+    { "ticker": "MU", "reaction": "-5.8%", "source_ids": [1] },
+    { "ticker": "JPM / V", "reaction": "+1.4% / +3.0%", "source_ids": [1] }
+  ],
+  "breadth": {
+    "as_of": "2026-08-24",
+    "method": "11 Select Sector SPDR ETF adjusted-close proxy; not exchange advance-decline breadth.",
+    "source": "Yahoo Finance chart endpoint; public fallback; raw input retained in the dated folder."
+  }
+}

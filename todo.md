@@ -120,3 +120,43 @@
 
 - [x] 將Claude首條遷移指令改為明確允許在V3 repository內修復阻塞點、建立小型可審核提交及推送main。
 - [x] 保留未通過readiness gates前不得啟用無人排程或宣稱公開發布成功的邊界。
+
+## Claude Migration Plan Review — Latest Response
+
+- [x] 審核Claude發現的24 August schema/data drift、雙重內容來源與GitHub授權阻塞，確認建議實作次序。
+- [x] 提供明確決策：維持歷史v1、以小型加性This Week契約補足缺口、加入Playwright測試，並在GitHub授權前保持NOT_DEPLOYED。
+
+## Claude C0–C2 Handoff Review
+
+- [x] 核對C2 staged patch、SHA-256、schema、建置與18路徑三語文字等價測試，列明C3至C6及最終驗收尚未完成部分。
+- [x] 提供重新開啟Claude後的安全續辦提示：先驗證／套用C2 patch，再完成C3、C4、C5、C6及最終驗收；明確列出William的GitHub授權與監督責任。
+
+## Claude Full 15-Step Continuation
+
+- [ ] 核驗C0／C1 mailbox補丁與先前C2 staged補丁的SHA-256、基準提交及套用順序。
+- [ ] 將C2.1日期／fallback修正、C3 HK安全與瀏覽器測試、C4靜態可攜性、C5廣度可重現性、C6授權探測及最終驗收編入Claude的剩餘15步執行提示。
+- [ ] 說明William只需執行的GitHub授權、每階段審閱與最終發布／排程批准行動。
+
+## C2 Acceptance Exception Decisions
+
+- [ ] 確認英文This Week歷史崩潰可由C2新資料驅動renderer修復，並以意義等價測試取代不可能的故障前文字等價比較。
+- [ ] 決定保留來源頁的已驗證來源名稱、信心與存取資訊，作為透明審計修復而非隱藏既有資料。
+- [ ] 將繁中／簡中概覽的英文敘事殘留納入C2.1本地化修正，並在C2提交前確認其餘中文頁面不含非豁免英文敘事。
+
+## Continuous Local Migration Authorisation
+
+- [ ] 授權Claude連續完成C2修正、C2.1、C3、C4、C5與最終本地驗收，使用小型正常簽署提交，不需逐項等待William回覆。
+- [ ] 保留三個單獨人工閘門：GitHub遠端寫入、GitHub Pages公開發布及每日排程啟用。
+
+## BIT Daily Market Intelligence Operating Standard
+
+- [ ] 將William最新提供的動態日期、來源優先、完整擷取、驗證分層、Yesterday→Today thesis、Zoey top-down框架及9:30 HKT交付規範納入每日操作標準。
+- [ ] 對齊每日資料、港股盤中標籤、三語雙模式、來源審計、網站驗證及內部研究免責聲明品質閘門。
+- [ ] 在確認Claude／GitHub／資料來源授權和安全發布流程後，再決定是否建立每日排程。
+
+## BIT Daily Market Intelligence — 2026-08-25
+
+- [ ] 完整提取William提供的8月25日參考與Bitget UEX材料，確認所有時間、收市／盤中邊界、數字與未核實主張。
+- [ ] 用Tier 1／Tier 2來源核實8月24日美股收市、利率、宏觀／政策、NVDA與半導體鏈、本週日程及香港市場狀態。
+- [ ] 建立2026-08-25結構化資料、三語投教／分析內容、來源審計與以8月24日為模板的正式頁面。
+- [ ] 驗證資料、完整三語、閱讀模式、六區導覽、熱力圖／廣度、歷史入口和桌面／行動版後才發布V3更新。

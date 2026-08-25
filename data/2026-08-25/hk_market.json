@@ -1,0 +1,24 @@
+{
+  "as_of": "2026-08-25",
+  "session_type": "hk_morning_intraday_snapshot",
+  "completed_session": null,
+  "intraday_snapshot": {
+    "timestamp_hkt": "2026-08-25 10:36 HKT",
+    "HSI": 25478.38,
+    "change_pct": -0.15,
+    "source": "Hang Seng Indexes official homepage; the provider disclosed a system outage and limited 15-minute updates."
+  },
+  "boundary": "This is an intraday snapshot, not a Hong Kong completed close. Do not infer the subsequent close, volume or driver from it.",
+  "context": [
+    {
+      "id": "iran_sanctions",
+      "fact": "U.S. Treasury announced Operation Economic Outcast on 24 Aug and expanded sanctions exposure across five Iranian economic sectors.",
+      "source_ids": [3]
+    },
+    {
+      "id": "us_tech",
+      "fact": "The prior U.S. completed session saw technology and chip stocks lead the decline ahead of NVIDIA earnings.",
+      "source_ids": [1]
+    }
+  ]
+}
