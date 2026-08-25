@@ -163,7 +163,7 @@
 
 ## Product Upgrade — Stable Daily Hub, Archive and Hong Kong Dual Clock
 
-- [ ] 研究TechFlow／Bitget UEX參考的資訊池、內容深度與節奏，篩選可採用但不複製的研究模式。
-- [ ] 建立固定daily hub網址、可見歷史版本按鈕／抽屜與歷史頁切換，保留所有已發布日期。
-- [ ] 擴充港股模組：9:00–16:00 HKT交易時鐘、as-of盤中快照、上次完成收市、午市／下午更新邊界及跨市場傳導。
-- [ ] 完成本地桌面／行動版預覽與三語驗證後，先讓William確認才發布GitHub及GitHub Pages。
+- [x] 研究TechFlow／Bitget UEX參考的資訊池、內容深度與節奏，篩選可採用但不複製的研究模式。
+- [x] 建立固定daily hub網址、可見歷史版本按鈕／抽屜與歷史頁切換，保留所有已發布日期。
+- [x] 擴充港股模組：9:00–16:00 HKT交易時鐘、as-of盤中快照、上次完成收市、午市／下午更新邊界及跨市場傳導。
+- [x] 完成本地桌面／行動版預覽與三語驗證後，先讓William確認才發布GitHub及GitHub Pages。
